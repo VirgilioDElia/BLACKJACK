@@ -1,0 +1,19 @@
+button#startGame{
+    width: 300px;
+    height: 100px;
+    font-size: 2rem;
+    background-color: crimson;
+    border: 5px  black;
+}
+
+
+#container div {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#container div img{
+    width: 200px;
+    
+}
