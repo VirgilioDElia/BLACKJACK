@@ -1,9 +1,16 @@
 function Card(number, type){
     this.number = number;
     this.type = type;
-    if(this.number > 0 && this.number <11){
-        this.value = this.numbert;
-    } else {
+    if(this.number > 0 && this.number <11 && this.number !=1){
+        this.value = this.number;
+    } else if(this.number == 1){
+        this.value=11;
+        if(this.score>21){
+            this.value=1;
+        }else{
+            this.value=11;
+        }
+    }else{
         this.value = 10;
     }
     this.imageName = this.loadImage();

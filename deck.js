@@ -21,5 +21,6 @@ Deck.prototype.shuffle = function (){
 };
 
 Deck.prototype.getCard = function(){
-    return this.cards.pop();
+    let c = this.cards.pop();
+    return c;
 };

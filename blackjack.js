@@ -14,14 +14,12 @@ BlackJack.prototype.init = function(){
 
 BlackJack.prototype.startGame = function(){
     this.deck.shuffle();
-    let imagePrefix = "img/carte_francesi/carte_francesi/";
+    let imagePrefix = "img/carte_francesi/";
     let c1 = this.deck.getCard();
     let c2 = this.deck.getCard();
     let playerTable = document.createElement("table");
     playerTable.setAttribute('id',"playerTable");
-    this.container.appendChild(playerTable)
-    console.log(c1.imageName);
-    console.log(c1.imageName);
+    this.container.appendChild(playerTable);
     let img1 = document.createElement("img");
     img1.setAttribute('src',`${imagePrefix}${c1.imageName}`);
     playerTable.appendChild(img1);
